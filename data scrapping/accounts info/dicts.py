@@ -1,5 +1,5 @@
 brand_dict_reps = {
-             "Apple" : ["Apple","AppleMusic","AppleSupport","AppleTVPlus","AppleTV","iTunes"]
+             "Apple" : ["Apple","AppleMusic","AppleSupport","AppleTVPlus","AppleTV","iTunes"],
              "Samsung" : ["SamsungMobile","Samsung"],
              "Amazon" : ["amazon","alexa99"]}
 brand_dict_ft = {
