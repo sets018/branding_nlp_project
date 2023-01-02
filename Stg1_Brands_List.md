@@ -10,6 +10,8 @@
     
 		Note: Start with the next brand in the list so we don't do each others work.
 
+[Socialbladelink](https://socialblade.com/twitter/user/microsoft)
+
 ### Theory and Criteria
 
 .
