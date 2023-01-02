@@ -1,3 +1,10 @@
+from requests import get 
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from time import sleep
+from random import randint
+import pandas as pd
+
 path = r'C:\Users\ends0\Downloads\chromedriver'
 driver = webdriver.Chrome(path)
 platform = "twitter"
