@@ -3,6 +3,9 @@
 ### Stage 1
 
 * Exploratory Platforms as Linkedin or TikTok, should be considered, given its nature among a certain poblation Target?
+  
+  #### Findings on Exploration Research
+  * Accounts use videos along emojis, videos to publish as if were tv ads like.
 
 .
 .
