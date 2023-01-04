@@ -10,7 +10,7 @@ brand_dict_reps = {
              "BMW" : ["BMW","BMWGroup","BMWMotorrad","BMWUSA","BMWMotorsport","BMW_UK","BMWi","BMWMotorradUSA","bmwindia","BMWMotorradUK","bmwcanada","BMWUKMotorsport","BMWMotorradMoSp"],
              "Louis Vuitton" : ["LouisVuitton","LVMH","MoetHennessy"],
              "Cisco" : ["Cisco","CiscoLive","CiscoNetworking","Webex","CiscoNetAcad","HeyCisco","CiscoPress","ciscoDC","CiscoCollab","ciscospaces","CiscoEvents","CiscoNetworking","CiscoIT","CiscoCX","CiscoSecure","CiscoPartners","CiscoDevNet","CiscoSoftware","LearningatCisco","Cisco_Support"],
-             "Instagram" : ["instagram","InstagramComms"]
+             "Instagram" : ["instagram","InstagramComms"],
              "Facebook" : ["facebook","FacebookGaming","FacebookWatch","facebookapp"],
              "IBM" : ["IBM","IBMData","IBMResearch","IBMIoT","IBMDeveloper","IBMcloud","IBMNews","IBMWatson","IBMSecurity","IBMEurope","IBMPartners","IBMservers","ibm_in","IBMBlockchain","IBMScience","IBMImpact","IBMUKI","IBMSports","IBMMEA","IBMCommunity","IBM_iX","ibmconsulting","IBMIBV","IBMpolicy","ibmdesign","IBMZ","lifeatibm","IBMCanada","IBMStorage"],
              "Intel" : ["intel","IntelGaming","intelnews","WeAreIntel","Inteliot","IntelBusiness","IntelTech","IntelIndia","IntelIndia","intelcanada","IntelFPGA","IntelSoftware","intelcapital","IntelUK","IntelSecurity","IntelHealth","intelhpc"],
@@ -30,7 +30,7 @@ brand_dict_ft = {
              "BMW" : ["13","46,331","+11%","DOWN 1 PLACE"],
              "Louis Vuitton" : ["14","44,508","+21%","DOWN 1 PLACE"],
              "Cisco" : ["15","41,298","+14%","UP 1 PLACE"],
-             "Instagram" : ["16","36,516","-5%","UP 3 PLACES"]
+             "Instagram" : ["16","36,516","-5%","UP 3 PLACES"],
              "Facebook" : ["17","34,538","-5%","DOWN 2 PLACES"],
              "IBM" : ["18","34,242","+3%","RANK UNCHANGED"],
              "Intel" : ["19","32,916","-8%","DOWN 2 PLACES"],
