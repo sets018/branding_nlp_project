@@ -8,7 +8,7 @@ brand_dict_reps = {
 brand_dict_ft = {
              "Apple" : ["1","482,215","+18%","RANK UNCHANGED"],
              "Microsoft" : ["2","278,288","+32%","UP 1 PLACE"],
-             "Amazon" : ["3","274,819","+10%","DOWN 1 PLACE"]}
-	     "Google" : ["4","251,751","+28%","RANK UNCHANGED"]}
+             "Amazon" : ["3","274,819","+10%","DOWN 1 PLACE"],
+	     "Google" : ["4","251,751","+28%","RANK UNCHANGED"],
              "Samsung" : ["5","87,689","+17%","RANK UNCHANGED"],
 	     "Toyota" : ["6","59,757","+10%","UP 1 PLACE"],
