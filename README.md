@@ -3,7 +3,7 @@ Consists on Two Stages from Brand selection to seting up a model of emojis emoti
 
 ## Missing Brands to Scrape
 
-7 CocaCola to ...
+7 CocaCola to 10 Nike
 
 ## Deadlines
 
