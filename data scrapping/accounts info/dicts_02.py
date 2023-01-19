@@ -12,7 +12,7 @@ brand_dict_reps = {
              "GE" : ["generalelectric","GE_Canada","GE_Appliances","GEpublicaffairs"],
              "Allianz" : ["Allianz","allianzuknews","AllianzPartners"],
              "Hyundai" : ["Hyundai_Global","Hyundai","HyundaiCanada","Hyundai_UK"],
-             "Salesforce" : ["salesforce","SalesforceOrg","SalesforceNews","SalesforceAdmns","SalesforceDevs],
+             "Salesforce" : ["salesforce","SalesforceOrg","SalesforceNews","SalesforceAdmns","SalesforceDevs"],
 }
 
 brand_dict_ft = {
