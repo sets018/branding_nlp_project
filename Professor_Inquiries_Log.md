@@ -9,6 +9,7 @@
   * Automakers as Mercedes-Benz has an account for every car official dealership using the brand.
   * Disney creates an account for almost every IP
   * Gillette has a low precence in twitter
+  * Colgate Canada has been closed and in general no high presence
 
 .
 .
