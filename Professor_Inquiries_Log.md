@@ -8,6 +8,7 @@
   * Accounts use videos along emojis, videos to publish as if were tv ads like.
   * Automakers as Mercedes-Benz has an account for every car official dealership using the brand.
   * Disney creates an account for almost every IP
+  * Gillette has a low precence in twitter
 
 .
 .
