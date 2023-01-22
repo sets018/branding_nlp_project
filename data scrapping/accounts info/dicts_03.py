@@ -23,11 +23,11 @@ brand_dict_reps = {
              "Hennessy" : ["Hennessy","MoetHennessy"],
              "KFC" : ["kfc_canada","TellTheColonel","kfc"],
              "Heineken" : ["HeinekenCA","Heineken_Exp","Heineken_US","Heineken"],
-             "Burberry" : ["Allianz","allianzuknews","AllianzPartners"],
-             "Canon" : ["Allianz","allianzuknews","AllianzPartners"],
-             "Land Rover" : ["Allianz","allianzuknews","AllianzPartners"],
-             "MINI" : ["Allianz","allianzuknews","AllianzPartners"],
-             "Sephora" : ["Allianz","allianzuknews","AllianzPartners"],
+             "Burberry" : ["BurberryCorp","Burberry"],
+             "Canon" : ["CanonCanada","CanonUSApro","CanonUSAimaging","CanonUSABiz","CanonUSA"],
+             "Land Rover" : ["LandRoverCanada","jaguarlandrover","LandRoverUSA","LandRover"],
+             "MINI" : ["MINIUSA","MINICanada","MINI"],
+             "Sephora" : ["Sephora"],
              }
 
 brand_dict_ft = {
