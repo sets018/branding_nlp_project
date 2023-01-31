@@ -1,0 +1,5 @@
+brand_dict_reps = {
+             "Apple" : ["apple","AppStore", "applemusic", "appletv"]}
+
+brand_dict_ft = {
+             "Apple" : ["1","482,215","+18%","RANK UNCHANGED"]}
