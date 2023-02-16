@@ -39,15 +39,8 @@ brand_dict_reps = {
              "eBay" : ["ebay","eBayCanada"],
              "Nissan" : ["nissantrucks","Nissan","NissanElectric","NISMO"], 
              "HP Inc." : ["HP","HPCanada"],
-             "LEGO" : ["LEGOMarvelGame","LEGO_Education","LEGOIdeas","LEGO_Group"],
-             "Red Bull" : ["redbullgaming","redbullracing","RedBullCanada","redbull"],
-             "HSBC" : ["HSBC_Sport","HSBC_US","HSBC_CA","HSBC"],
-             "Morgan Stanley" : ["etrade","MorganStanley"],
-             "Nestlé" : ["NestleHealthUS","NestleCA","NestleUSA","Nestle"],
-             "Nintendo" : ["nintendolife","NintendoVS","NintendoAmerica","NintendoCanada"],
-             "3M" : ["3MCanada","3MNews","3M"],
-             "Spotify" : ["SpotifyCanada","SpotifyCares","SpotifyUSA","spotifyartists","Spotify"],
-             "Gillette" : ["GilletteVenus","GilletteStadium","Gillette"],
+             "LEGO" : ["BeyondtheBrickTV","LEGOTechnic"],
+             "Red Bull" : ["RedBull","RedBullMotorsports","redbullracing"]
 }
 
 brand_dict_ft = {
@@ -93,11 +86,4 @@ brand_dict_ft = {
              "HP Inc." : ["62","11,884","+13%","UP 1 PLACE"],
              "LEGO" : ["63","11,846","+30%","UP 8 PLACES"],
              "Red Bull" : ["64","11,547","NEW","NEW"],
-             "HSBC" : ["65","11,247","+9%","DOWN 1 PLACE"],
-             "Morgan Stanley" : ["66","11,039","+18%","UP 3 PLACES"],
-             "Nestlé" : ["67","10,921","+3%","DOWN 5 PLACES"],
-             "Nintendo" : ["68","10,676","+16%","UP 2 PLACES"],
-             "3M" : ["69","10,505","+8%","DOWN 2 PLACES"],
-             "Spotify" : ["70","10,324","+6%","DOWN 4 PLACES"],
-             "Gillette" : ["71","10,211","-4%","DOWN 10 PLACES"],
              }
