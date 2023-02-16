@@ -20,6 +20,7 @@ brand_dict_reps = {
              "Mastercard" : ["Mastercard"],
              "adidas" : ["adidasoriginals","adidasfootballus","adidasWomen","adidas","adidasBasketball","adidasskateboarding"],
              "AXA Group" : ["axa","AXAhealth"],
+             .......................................................................................
              "Budweiser" : ["HomeOfBud","BudweiserCanada","budweiserusa","Budweiser"],  
              "Nescafé" : ["NescafeUSA","NESCAFE","NescafeCA"],
              "Audi" : ["AudiCanada","Audi","AudiOfficial"],
