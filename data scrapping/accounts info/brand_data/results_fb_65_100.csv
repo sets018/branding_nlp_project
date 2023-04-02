@@ -1,70 +1,41 @@
-,Ranking number,Brand,Brand Value,Platform,Brand Representation,Brand Growth,Rank Change,Page Likes,Talking About This,Grade,Talking Rank,Likes Rank
-0,65,HSBC,"11,247",facebook,HSBC,+9%,DOWN 1 PLACE,"3,055,376",386,A-,"149,885th","9,765th"
-1,66,Morgan Stanley,"11,039",facebook,morganstanley,+18%,UP 3 PLACES,"107,607","1,675",B-,"87,660th","122,358th"
-2,67,Nestlé,"10,921",facebook,nestlebabyandme,+3%,DOWN 5 PLACES,"102,448",30,N/A,TBD,TBD
-3,67,Nestlé,"10,921",facebook,nestle,+3%,DOWN 5 PLACES,"11,210,131",0,N/A,TBD,TBD
-4,68,Nintendo,"10,676",facebook,Nintendo,+16%,UP 2 PLACES,"5,398,318","70,739",A-,"11,010th","5,306th"
-5,68,Nintendo,"10,676",facebook,nintendoofcanada,+16%,UP 2 PLACES,"262,853","3,360",B,"65,701st","72,497th"
-6,68,Nintendo,"10,676",facebook,Nintendo3DS,+16%,UP 2 PLACES,"3,725,052",222,A-,"186,493rd","7,956th"
-7,68,Nintendo,"10,676",facebook,NintendoSwitch,+16%,UP 2 PLACES,"7,695,405","38,517",A-,"16,836th","3,523rd"
-8,69,3M,"10,505",facebook,3MAuto,+8%,DOWN 2 PLACES,"408,487",33,N/A,TBD,TBD
-9,69,3M,"10,505",facebook,3M,+8%,DOWN 2 PLACES,21,0,C,"878,771st","1,203,482nd"
-10,69,3M,"10,505",facebook,3MHealthCare,+8%,DOWN 2 PLACES,"572,313",61,B,"263,524th","42,647th"
-11,70,Spotify,"10,324",facebook,Spotify,+6%,DOWN 4 PLACES,"22,177,834",28,N/A,TBD,TBD
-12,71,Gillette,"10,211",facebook,gillettevenus,-4%,DOWN 10 PLACES,"1,320,338",131,B+,"215,346th","21,795th"
-13,71,Gillette,"10,211",facebook,Gillette,-4%,DOWN 10 PLACES,"2,049,845",717,B+,"120,449th","14,456th"
-14,72,Colgate,"10,130",facebook,Colgate,+5%,DOWN 4 PLACES,"3,620,765","1,251",N/A,TBD,TBD
-15,73,Danone,"9,528",facebook,DanoneCanada,-3%,DOWN 8 PLACES,"170,045",11,N/A,TBD,TBD
-16,73,Danone,"9,528",facebook,Danone,-3%,DOWN 8 PLACES,"870,029",118,N/A,TBD,TBD
-17,74,Cartier,"9,521",facebook,Cartier,+17%,DOWN 1 PLACE,"5,008,170",100,N/A,TBD,TBD
-18,74,Cartier,"9,521",facebook,Cartier,+17%,DOWN 1 PLACE,"5,008,170",100,N/A,TBD,TBD
-19,75,Ferrari,"9,365",facebook,FerrariRaces,+31%,UP 1 PLACE,"63,937","4,399",B-,"56,869th","158,983rd"
-20,75,Ferrari,"9,365",facebook,Ferrari,+31%,UP 1 PLACE,"16,141,614","59,987",A-,"12,583rd","1,420th"
-21,75,Ferrari,"9,365",facebook,ScuderiaFerrari,+31%,UP 1 PLACE,"4,650,146","117,157",A-,"7,077th","6,271st"
-22,76,Santander,"9,015",facebook,formulasantander,+11%,DOWN 2 PLACES,"133,830",140,B-,"209,715th","108,208th"
-23,76,Santander,"9,015",facebook,santanderglobal,+11%,DOWN 2 PLACES,"5,044",11,B-,"407,227th","460,876th"
-24,77,Dior,"8,919",facebook,Dior,+27%,RANK UNCHANGED,"18,584,128","286,767",A-,"3,139th","1,179th"
-25,78,Kellogg’s,"8,747",facebook,frostedflakes,+1%,DOWN 6 PLACES,"929,933","1,763",B,"76,867th","29,680th"
-26,78,Kellogg’s,"8,747",facebook,Kelloggs,+1%,DOWN 6 PLACES,"587,552","1,698",B,"87,187th","41,845th"
-27,78,Kellogg’s,"8,747",facebook,KelloggCanada,+1%,DOWN 6 PLACES,"183,389",26,B,"341,889th","90,313th"
-28,79,FedEx,"8,166",facebook,FedEx,+8%,DOWN 4 PLACES,"3,012,221","16,392",A-,"28,627th","9,919th"
-29,79,FedEx,"8,166",facebook,FedExOffice,+8%,DOWN 4 PLACES,"254,884",559,N/A,TBD,TBD
-30,80,Corona,"7,764",facebook,Coronacanada,+12%,DOWN 2 PLACES,"15,035,956",450,N/A,TBD,TBD
-31,80,Corona,"7,764",facebook,CoronaUSA,+12%,DOWN 2 PLACES,"2,034,261",526,B+,"133,195th","14,554th"
-32,80,Corona,"7,764",facebook,Corona,+12%,DOWN 2 PLACES,"15,022,969",8,N/A,TBD,TBD
-33,81,LinkedIn,"7,595",facebook,LinkedIn,+19%,UP 2 PLACES,"2,620,281","31,088",B+,"20,452nd","11,429th"
-34,81,LinkedIn,"7,595",facebook,linkedinlearning,+19%,UP 2 PLACES,"1,301,147","2,325",B+,"75,757th","22,061st"
-35,81,LinkedIn,"7,595",facebook,LinkedInNews,+19%,UP 2 PLACES,"464,716",90,N/A,TBD,TBD
-36,82,DHL,"7,518",facebook,DHLMotorsports,+11%,DOWN 2 PLACES,"686,736",301,B,"165,936th","37,321st"
-37,82,DHL,"7,518",facebook,DHLUSA,+11%,DOWN 2 PLACES,"12,448",697,N/A,TBD,TBD
-38,82,DHL,"7,518",facebook,dhl,+11%,DOWN 2 PLACES,0,"13,488",C-,"33,277th","1,259,131st"
-39,82,DHL,"7,518",facebook,DHLexpress,+11%,DOWN 2 PLACES,"378,435","1,877",B,"81,193rd","57,124th"
-40,83,Caterpillar,"7,397",facebook,catfootwear,+14%,DOWN 1 PLACE,"476,433","1,907",B,"84,248th","48,715th"
-41,83,Caterpillar,"7,397",facebook,caterpillarinc,+14%,DOWN 1 PLACE,"1,864,485","4,443",B+,"60,024th","15,786th"
-42,84,Xiaomi,"7,326",facebook,XiaomiUSA,NEW,NEW,"441,331",30,N/A,TBD,TBD
-43,84,Xiaomi,"7,326",facebook,XiaomiGlobal,NEW,NEW,"14,943,668","43,153",A-,"14,544th","1,576th"
-44,84,Xiaomi,"7,326",facebook,XiaomiSupportGlobal,NEW,NEW,"35,748",470,N/A,TBD,TBD
-45,85,Jack Daniel’s,"7,171",facebook,jackdaniels,+10%,DOWN 4 PLACES,"17,158,723",0,N/A,TBD,TBD
-46,86,Huawei,"6,634",facebook,HuaweiMobileService,+7%,DOWN 1 PLACE,,,,,
-47,86,Huawei,"6,634",facebook,Huaweimobile,+7%,DOWN 1 PLACE,"54,944,488","1,808",N/A,TBD,TBD
-48,86,Huawei,"6,634",facebook,huawei,+7%,DOWN 1 PLACE,0,0,C-,"819,033rd","1,303,027th"
-49,87,Kia,"6,612",facebook,Kia,+9%,DOWN 1 PLACE,"1,147,216","6,595",B+,"50,132nd","24,636th"
-50,87,Kia,"6,612",facebook,kiacanada,+9%,DOWN 1 PLACE,"397,765","1,560",B,"78,701st","55,187th"
-51,87,Kia,"6,612",facebook,Kiaworldwideofficial,+9%,DOWN 1 PLACE,"4,193,460",726,A-,"120,714th","6,950th"
-52,88,Tiffany & Co.,"6,552",facebook,tiffany,+19%,UP 4 PLACES,"10,349,824","43,519",A-,"15,824th","2,521st"
-53,89,Prada,"6,548",facebook,Prada,+21%,UP 5 PLACES,"7,418,782","32,493",A-,"20,143rd","3,685th"
-54,90,Hewlett Packard Enterprise,"6,486",facebook,HewlettPackardEnterprise,+3%,DOWN 6 PLACES,"300,485",763,B,"119,871st","66,600th"
-55,90,Hewlett Packard Enterprise,"6,486",facebook,HPECareers,+3%,DOWN 6 PLACES,"587,365",234,N/A,TBD,TBD
-56,91,Panasonic,"6,337",facebook,PanasonicGroup,+9%,DOWN 3 PLACES,"742,198",685,B,"123,352nd","35,225th"
-57,91,Panasonic,"6,337",facebook,panasonicsmartphone,+9%,DOWN 3 PLACES,,,,,
-58,92,Johnson & Johnson,"6,130",facebook,jnj,+3%,DOWN 5 PLACES,"1,062,900","2,398",B,"74,757th","26,376th"
-59,93,Hennessy,"6,111",facebook,HennessyGlobal,+15%,UP 2 PLACES,"3,655,708","11,528",N/A,TBD,TBD
-60,94,KFC,"6,089",facebook,KFC,+12%,DOWN 1 PLACE,"53,421,742",0,N/A,TBD,TBD
-61,95,Heineken,"6,003",facebook,heinekenexperience,+5%,DOWN 6 PLACES,,,,,
-62,95,Heineken,"6,003",facebook,Heineken,+5%,DOWN 6 PLACES,"24,229,777","47,257",A-,"14,970th",798th
-63,96,Burberry,"5,917",facebook,Burberry,+14%,UP 1 PLACE,"17,597,556","7,705",A-,"44,833rd","1,275th"
-64,97,Canon,"5,828",facebook,Canon,-15%,DOWN 18 PLACES,"69,912",19,B-,"391,991st","152,286th"
-65,97,Canon,"5,828",facebook,CanonCanada,-15%,DOWN 18 PLACES,"439,683","3,314",B,"67,728th","51,573rd"
-66,98,Land Rover,"5,593",facebook,LandRover,+10%,RANK UNCHANGED,"16,179,373","2,354",N/A,TBD,TBD
-67,99,MINI,"5,579",facebook,mini,+7%,DOWN 3 PLACES,"12,306,056","5,123",A-,"53,757th","1,996th"
-68,100,Sephora,"5,491",facebook,sephora,+19%,RANK UNCHANGED,"19,491,226","54,256",A-,"14,679th","1,094th"
+Ranking number,Brand,Brand Value,Platform,Brand Representation,Brand Growth,Rank Change,Page Likes,Talking About This,Grade,Talking Rank,Likes Rank
+65,HSBC,"11,247",facebook,HSBC,9%,DOWN 1 PLACE,"3,055,376",386,A-,"149,885th","9,765th"
+66,Morgan Stanley,"11,039",facebook,morganstanley,18%,UP 3 PLACES,"107,607","1,675",B-,"87,660th","122,358th"
+67,Nestl�,"10,921",facebook,nestle.ca,3%,DOWN 5 PLACES,"102,448",30,N/A,TBD,TBD
+68,Nintendo,"10,676",facebook,NintendoAmerica,16%,UP 2 PLACES,"5,398,318","70,739",A-,"11,010th","5,306th"
+69,3M,"10,505",facebook,3MCanada,8%,DOWN 2 PLACES,"408,487",33,N/A,TBD,TBD
+70,Spotify,"10,324",facebook,SpotifyCanada,6%,DOWN 4 PLACES,"22,177,834",28,N/A,TBD,TBD
+71,Gillette,"10,211",facebook,gillette,-4%,DOWN 10 PLACES,"1,320,338",131,B+,"215,346th","21,795th"
+72,Colgate,"10,130",facebook,Colgate,5%,DOWN 4 PLACES,"3,620,765","1,251",N/A,TBD,TBD
+73,Danone,"9,528",facebook,DanoneCanada,-3%,DOWN 8 PLACES,"170,045",11,N/A,TBD,TBD
+73,Danone,"9,528",facebook,Danone,-3%,DOWN 8 PLACES,"870,029",118,N/A,TBD,TBD
+74,Cartier,"9,521",facebook,Cartier,17%,DOWN 1 PLACE,"5,008,170",100,N/A,TBD,TBD
+75,Ferrari,"9,365",facebook,Ferrari,31%,UP 1 PLACE,"16,141,614","59,987",A-,"12,583rd","1,420th"
+75,Ferrari,"9,365",facebook,ScuderiaFerrari,31%,UP 1 PLACE,"4,650,146","117,157",A-,"7,077th","6,271st"
+76,Santander,"9,015",facebook,santanderglobal,11%,DOWN 2 PLACES,"5,044",11,B-,"407,227th","460,876th"
+77,Dior,"8,919",facebook,Dior,27%,RANK UNCHANGED,"18,584,128","286,767",A-,"3,139th","1,179th"
+78,Kellogg�s,"8,747",facebook,KelloggCanada,1%,DOWN 6 PLACES,"929,933","1,763",B,"76,867th","29,680th"
+78,Kellogg�s,"8,747",facebook,kelloggsricekrispiestreats,1%,DOWN 6 PLACES,"587,552","1,698",B,"87,187th","41,845th"
+79,FedEx,"8,166",facebook,FedEx,8%,DOWN 4 PLACES,"3,012,221","16,392",A-,"28,627th","9,919th"
+80,Corona,"7,764",facebook,Corona,12%,DOWN 2 PLACES,"15,022,969",8,N/A,TBD,TBD
+81,LinkedIn,"7,595",facebook,LinkedIn,19%,UP 2 PLACES,"2,620,281","31,088",B+,"20,452nd","11,429th"
+82,DHL,"7,518",facebook,dhl,11%,DOWN 2 PLACES,0,"13,488",C-,"33,277th","1,259,131st"
+83,Caterpillar,"7,397",facebook,caterpillarinc,14%,DOWN 1 PLACE,"476,433","1,907",B,"84,248th","48,715th"
+84,Xiaomi,"7,326",facebook,XiaomiGlobal,NEW,NEW,"14,943,668","43,153",A-,"14,544th","1,576th"
+85,Jack Daniel's,"7,171",facebook,jackdaniels,10%,DOWN 4 PLACES,"17,158,723",0,N/A,TBD,TBD
+86,Huawei,"6,634",facebook,Huaweimobile,7%,DOWN 1 PLACE,"54,944,488","1,808",N/A,TBD,TBD
+86,Huawei,"6,634",facebook,huawei,7%,DOWN 1 PLACE,0,0,C-,"819,033rd","1,303,027th"
+87,Kia,"6,612",facebook,Kia,9%,DOWN 1 PLACE,"1,147,216","6,595",B+,"50,132nd","24,636th"
+88,Tiffany & Co.,"6,552",facebook,tiffany,19%,UP 4 PLACES,"10,349,824","43,519",A-,"15,824th","2,521st"
+89,Prada,"6,548",facebook,Prada,21%,UP 5 PLACES,"7,418,782","32,493",A-,"20,143rd","3,685th"
+90,Hewlett Packard Enterprise,"6,486",facebook,HewlettPackardEnterprise,3%,DOWN 6 PLACES,"300,485",763,B,"119,871st","66,600th"
+91,Panasonic,"6,337",facebook,PanasonicGroup,9%,DOWN 3 PLACES,"742,198",685,B,"123,352nd","35,225th"
+92,Johnson & Johnson,"6,130",facebook,jnj,3%,DOWN 5 PLACES,"1,062,900","2,398",B,"74,757th","26,376th"
+93,Hennessy,"6,111",facebook,HennessyCanada,15%,UP 2 PLACES,"3,655,708","11,528",N/A,TBD,TBD
+94,KFC,"6,089",facebook,KFCCanada,12%,DOWN 1 PLACE,"53,421,742",0,N/A,TBD,TBD
+95,Heineken,"6,003",facebook,Heinekenca,5%,DOWN 6 PLACES,,,,,
+96,Burberry,"5,917",facebook,Burberry,14%,UP 1 PLACE,"17,597,556","7,705",A-,"44,833rd","1,275th"
+97,Canon,"5,828",facebook,CanonCanada,-15%,DOWN 18 PLACES,"439,683","3,314",B,"67,728th","51,573rd"
+98,Land Rover,"5,593",facebook,LandRoverCanada,10%,RANK UNCHANGED,"16,179,373","2,354",N/A,TBD,TBD
+99,MINI,"5,579",facebook,MINI.canada,7%,DOWN 3 PLACES,"12,306,056","5,123",A-,"53,757th","1,996th"
+100,Sephora,"5,491",facebook,sephoracanada,19%,RANK UNCHANGED,"19,491,226","54,256",A-,"14,679th","1,094th"
