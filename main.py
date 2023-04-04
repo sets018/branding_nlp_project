@@ -24,9 +24,7 @@ def run_query(query):
     rows = [dict(row) for row in rows_raw]
     return rows
 
-rows = run_query("SELECT * FROM `tweets_data`")
-
-data = pd.read_sql(rows)
+rows = run_query("SELECT * FROM `branding-nlp-project.twitter_data.tweets_merged`")
 
 st.set_page_config(
     page_title="Twitter_EDA",
