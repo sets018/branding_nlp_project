@@ -36,8 +36,5 @@ def run_query(query):
     return rows
 
 rows = run_query("SELECT * FROM `branding-nlp-project.twitter_data.tweets_merged`")
-st.write((type(rows)))
-st.write((len(rows)))
-st.write(rows[0])
-st.write(rows[1])
-st.write((type(rows[1])))
+df = pd.DataFrame(rows)
+st.write(df.head())
