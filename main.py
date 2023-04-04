@@ -8,6 +8,17 @@ import plotly.figure_factory as ff
 from google.oauth2 import service_account
 from google.cloud import bigquery
 
+st.set_page_config(
+    page_title="Twitter_EDA",
+    layout="centered",
+    initial_sidebar_state="auto",
+)
+
+st.title('Twitter_EDA')
+st.write('idk what im doing with my life')
+
+cat_input = []
+num_input = []
 # Create API client.
 credentials = service_account.Credentials.from_service_account_info(
     st.secrets["gcp_service_account"]
@@ -25,15 +36,3 @@ def run_query(query):
     return rows
 
 rows = run_query("SELECT * FROM `branding-nlp-project.twitter_data.tweets_merged`")
-
-st.set_page_config(
-    page_title="Twitter_EDA",
-    layout="centered",
-    initial_sidebar_state="auto",
-)
-
-st.title('Twitter_EDA')
-st.write('idk what im doing with my life')
-
-cat_input = []
-num_input = []
