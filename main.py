@@ -35,6 +35,6 @@ def run_query(query):
     rows = [dict(row) for row in rows_raw]
     return rows
 
-rows = run_query("SELECT * FROM `branding-nlp-project.twitter_data.tweets_merged`")
+rows = run_query("SELECT * FROM `branding-nlp-project.twitter_data.all_tweets_merged`")
 df = pd.DataFrame(rows)
 st.write(df.head())
