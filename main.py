@@ -57,16 +57,11 @@ def run_query(query):
     rows_raw = query_job.result()
     # Convert to list of dicts. Required for st.cache_data to hash the return value.
     rows = [dict(row) for row in rows_raw]
-    return rows
-
-rows = run_query("SELECT * FROM `branding-nlp-project.twitter_data.twitter_data_merged`")
-
-@st.cache_data()
-def load_data(data): 
     df = pd.DataFrame(rows)
     return df
 
-df = load_data(rows)
+df = run_query("SELECT * FROM `branding-nlp-project.twitter_data.twitter_data_merged`")
+
 st.write("Data head")
 st.write(df.head())
 st.write("Data shape")
