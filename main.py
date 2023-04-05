@@ -79,7 +79,7 @@ def run_query(query):
     df = pd.DataFrame(rows)
     return df
 
-df = run_query("SELECT * FROM `branding-nlp-project.twitter_data.twitter_data_merged`")
+df = run_query("SELECT * FROM `branding-nlp-project.twitter_data.twitter_data_clean`")
 
 st.write("Data head")
 st.write(df.head())
@@ -103,7 +103,7 @@ histg = st.checkbox("Distribution histogram with x axis as a cualitative var")
 if histg:
     histx_option = st.selectbox(
             "Select x time var",
-            ("Day", "Month", "Day_Month")
+            ("Hour", "Day", "Month", "Day_Month")
     )
     stat =  st.radio(
         "Select stat for y axis var",
@@ -131,7 +131,7 @@ histg_color = st.checkbox("Distribution histogram with x axis as a cualitative v
 if histg_color:
     histx_option_2 = st.selectbox(
             "Select x time var for color histogram",
-            ("Day", "Month", "Day_Month")
+            ("Hour", "Day", "Month", "Day_Month")
     )
     stat_2 =  st.radio(
         "Select stat for y axis var color histogram",
@@ -146,24 +146,17 @@ if histg_color:
                 "Select y var for color histogram",
                 y_poss_options_2
             )  
-    color_stat =  st.radio(
-        "Select stat for y axis color var",
-        options=["Count","Mean","Sum"]
-    ) 
-    
-    if (color_stat == "Count"): 
-        y_poss_color_options_2 = ("#_Tweets")
-        color_option = "Retweet_Count"
-    else: 
-        y_poss_color_options_2 = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")  
-        color_option =  st.selectbox(
-                "Select color var",
-                y_poss_color_options_2
+    y_color_poss_options_2 = y_poss_options_2 
+    taken_option = y_poss_options_2
+
+    if taken_option in y_color_poss_options_2:
+        y_color_poss_options = tuple([poss_option for poss_option in y_color_poss_options_2 if option != taken_option])
+        
+    color_op = st.selectbox(
+                "Select var for color",
+                y_color_poss_options
             )  
     
-    var_time_plot_2 = plotting(df, histx_option_2, histy_option_2, stat_2, color_option)
-
-    def get_plot_time(var_time_plot_2): 
-        var_time_plot_2.show_plot()
-     
+    var_time_plot_2 = plotting(df, histx_option_2, histy_option_2, stat_2, color_op)
+    
     get_plot_time(var_time_plot_2)
