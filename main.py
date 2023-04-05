@@ -30,9 +30,11 @@ class plotting():
         self.data_plot = self.data_plot.reset_index()
         st.write(self.data_plot)
     def get_fig(self):
-        self.fig = px.histogram(self.data_plot, x = self.group_by, y = self.y_var,
-                   marginal="box",
-                   hover_data=self.data_plot)
+        if (self.stat == "Count"):
+            self.fig = px.bar(self.data_plot, x = self.group_by, y = self.y_var, title=f"# Tweets distribution over {self.group_by}s"
+        else:
+            self.fig = px.bar(self.data_plot, x = self.group_by, y = self.y_var, title=f"{self.y_var} {self.stat} distribution over {self.group_by}s")
+        
 st.set_page_config(
     page_title="Twitter_EDA",
     layout="centered",
@@ -93,7 +95,7 @@ if histg:
     )
     if (stat == "Count"): 
         y_poss_options = ("#_Tweets")
-        histy_options = "Retweet_Count"
+        histy_option = "Retweet_Count"
     else: 
         y_poss_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")  
         histy_option = st.selectbox(
