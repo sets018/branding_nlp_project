@@ -161,9 +161,9 @@ if histg_color:
                 y_poss_color_options_2
             )  
     
-    var_time_plot_2 = plotting(df, histx_option_2, histy_option_2, stat_2, color_option, color_stat)
+    var_time_plot_2 = plotting(df, histx_option_2, histy_option_2, stat_2, color_option)
 
-    def get_plot_time(var_time_plot): 
-        var_time_plot.show_plot()
+    def get_plot_time(var_time_plot_2): 
+        var_time_plot_2.show_plot()
      
-    get_plot_time(var_time_plot)
+    get_plot_time(var_time_plot_2)
