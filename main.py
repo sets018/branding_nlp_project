@@ -28,7 +28,7 @@ class plotting():
         self.data_plot = self.data_plot.to_frame()
         self.data_plot = self.data_plot.reset_index()
     def get_fig(self):
-        self.fig = px.histogram(self.data_plot, x = group_by, y = y_var
+        self.fig = px.histogram(self.data_plot, x = group_by, y = y_var,
                    marginal="box",
                    hover_data=self.data_plot)
 st.set_page_config(
