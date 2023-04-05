@@ -19,11 +19,11 @@ class plotting():
         get_fig()
         st.plotly_chart(self.fig)
     def prepare_data(self):
-        if (stat = "Count"):
+        if (stat == "Count"):
             self.data_plot = data.groupby(histx_option).count()[self.y_var]
-        if (stat = "Sum"):
+        if (stat == "Sum"):
             self.data_plot = data.groupby(histx_option).sum()[self.y_var]
-        if (stat = "Mean"):
+        if (stat == "Mean"):
             self.data_plot = data.groupby(histx_option).mean()[self.y_var]
         self.data_plot = self.data_plot.to_frame()
         self.data_plot = self.data_plot.reset_index()
