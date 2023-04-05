@@ -20,14 +20,15 @@ class plotting():
         self.get_fig()
         st.plotly_chart(self.fig)
     def prepare_data(self):
-        if (stat == "Count"):
-            self.data_plot = self.data.groupby(histx_option).count()[self.y_var]
-        if (stat == "Sum"):
-            self.data_plot = self.data.groupby(histx_option).sum()[self.y_var]
-        if (stat == "Mean"):
-            self.data_plot = self.data.groupby(histx_option).mean()[self.y_var]
+        if (self.stat == "Count"):
+            self.data_plot = self.data.groupby(self.group_by).count()[self.y_var]
+        if (self.stat == "Sum"):
+            self.data_plot = self.data.groupby(self.group_by).sum()[self.y_var]
+        if (self.stat == "Mean"):
+            self.data_plot = self.data.groupby(self.group_by).mean()[self.y_var]
         self.data_plot = self.data_plot.to_frame()
         self.data_plot = self.data_plot.reset_index()
+        st.write(self.data_plot)
     def get_fig(self):
         self.fig = px.histogram(self.data_plot, x = self.group_by, y = self.y_var,
                    marginal="box",
@@ -92,13 +93,14 @@ if histg:
     )
     if (stat == "Count"): 
         y_poss_options = ("#_Tweets")
+        histy_options = "Retweet_Count"
     else: 
-        y_poss_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")
-        
-    histy_option = st.selectbox(
-            "Select y var",
-            y_poss_options
-        )
+        y_poss_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")  
+        histy_option = st.selectbox(
+                "Select y var",
+                y_poss_options
+            )
+    
     var_time_plot = plotting(df, histx_option, histy_option, stat)
 
     def get_plot_time(var_time_plot): 
