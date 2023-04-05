@@ -119,7 +119,7 @@ if histg:
                 y_poss_options
             )
     
-    var_time_plot = plotting(df, histx_option, histy_option, stat, None, None)
+    var_time_plot = plotting(df, histx_option, histy_option, stat, None)
 
     def get_plot_time(var_time_plot): 
         var_time_plot.show_plot()
