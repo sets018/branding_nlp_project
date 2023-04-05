@@ -21,7 +21,7 @@ class plotting():
         self.get_fig()
         st.plotly_chart(self.fig)
     def prepare_data(self):
-        if (self.color_var == None): 
+        if (self.color_var == 'None'): 
             if (self.stat == "Count"):
                 self.data_plot = self.data.groupby(self.group_by).count()[self.y_var]
             if (self.stat == "Sum"):
@@ -39,7 +39,7 @@ class plotting():
         self.data_plot = self.data_plot.reset_index()
         st.write(self.data_plot)
     def get_fig(self):
-        if (self.color_var == None): 
+        if (self.color_var == 'None'): 
             if (self.stat == "Count"):
                 self.fig = px.bar(self.data_plot, x = self.group_by, y = self.y_var, title=f"# Tweets distribution over {self.group_by}s")
             else:
@@ -119,7 +119,7 @@ if histg:
                 y_poss_options
             )
     
-    var_time_plot = plotting(df, histx_option, histy_option, stat, None)
+    var_time_plot = plotting(df, histx_option, histy_option, stat, 'None')
 
     def get_plot_time(var_time_plot): 
         var_time_plot.show_plot()
