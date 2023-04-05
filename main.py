@@ -15,6 +15,7 @@ class plotting():
         self.group_by = group_by
         self.stat = stat
         self.y_var = y_var
+        self.prepare_data()
     def show_plot(self):
         self.get_fig()
         st.plotly_chart(self.fig)
@@ -28,7 +29,7 @@ class plotting():
         self.data_plot = self.data_plot.to_frame()
         self.data_plot = self.data_plot.reset_index()
     def get_fig(self):
-        self.fig = px.histogram(self.data_plot, x = group_by, y = y_var,
+        self.fig = px.histogram(self.data_plot, x = self.group_by, y = self.y_var,
                    marginal="box",
                    hover_data=self.data_plot)
 st.set_page_config(
