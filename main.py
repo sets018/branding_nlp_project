@@ -76,13 +76,11 @@ if histg:
     st.write("Distribution histogram with x axis as a cualitative var")
     histx_option = st.selectbox(
             "Select x time var",
-            ("Day", "Month", "Year", "Day_Month", "Month_Year"),
-            label_visibility=st.session_state.visibility,
-            disabled=st.session_state.disabled,
+            ("Day", "Month", "Year", "Day_Month", "Month_Year")
     )
     stat =  st.radio(
         "Select stat for y axis var",
-        options=["Count","Mean","Sum"],
+        options=["Count","Mean","Sum"]
     )
     if (stat == "Count"): 
         y_poss_options = ("#_Tweets")
@@ -91,7 +89,7 @@ if histg:
         
     histy_option = st.selectbox(
             "Select y var",
-            y_poss_options,
+            y_poss_options
         )
     var_time_plot = plotting(df, histx_option, histy_option, stat)
     var_time_plot.show_plot()
