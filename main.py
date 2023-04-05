@@ -60,7 +60,13 @@ def run_query(query):
     return rows
 
 rows = run_query("SELECT * FROM `branding-nlp-project.twitter_data.twitter_data_merged`")
-df = pd.DataFrame(rows)
+
+@st.cache_data()
+def load_data(data): 
+    df = pd.DataFrame(rows)
+    return df
+
+df = load_data(rows)
 st.write("Data head")
 st.write(df.head())
 st.write("Data shape")
@@ -68,11 +74,18 @@ st.write(df.shape)
 st.write("Data columns/vars")
 st.write(df.columns)
 st.write("Numerical variables stats")
-df_stats  = df.describe().apply(lambda s: s.apply(lambda x: format(x, 'f')))
+
+@st.cache_data()
+def get_stats(data):
+    df_stats  = data.describe().apply(lambda s: s.apply(lambda x: format(x, 'f')))
+    return df_stats
+
+df_stats  = get_stats(df)
 df_num_stats = df_stats[["Retweet_Count", "Quote_Count", "Like_Count", "Word_count", "Emoji_count"]]
 st.dataframe(df_num_stats)
 st.write("Graphsssssssss")
 histg = st.checkbox("Distribution histogram with x axis as a cualitative var")
+
 if histg:
     st.write("Distribution histogram with x axis as a cualitative var")
     histx_option = st.selectbox(
@@ -93,4 +106,9 @@ if histg:
             y_poss_options
         )
     var_time_plot = plotting(df, histx_option, histy_option, stat)
-    var_time_plot.show_plot()
+    
+    @st.cache_data
+    def get_plot_time(var_time_plot): 
+        var_time_plot.show_plot()
+     
+    get_plot_time(var_time_plot)
