@@ -20,6 +20,11 @@ class plotting():
     def show_plot(self):
         self.get_fig()
         st.plotly_chart(self.fig)
+    def scatter_plot(self, size_var):
+        self.size_var = size_var
+        self.scatter_fig = px.scatter(df, x = self.group_by, y = self.y_var, self.color_var,
+                           size = self.size_var)
+        st.plotly_chart(self.scatter_fig)
     def prepare_data(self):
         if (self.color_var == 'None'): 
             if (self.stat == "Count"):
@@ -98,6 +103,10 @@ df_stats  = get_stats(df)
 df_num_stats = df_stats[["Retweet_Count", "Quote_Count", "Like_Count", "Word_count", "Emoji_count"]]
 st.dataframe(df_num_stats)
 st.write("Graphsssssssss")
+
+def get_plot_time(var_time_plot): 
+    var_time_plot.show_plot()
+    
 histg = st.checkbox("Distribution histogram with x axis as a cualitative var")
 
 if histg:
@@ -120,9 +129,6 @@ if histg:
             )
     
     var_time_plot = plotting(df, histx_option, histy_option, stat, 'None')
-
-    def get_plot_time(var_time_plot): 
-        var_time_plot.show_plot()
      
     get_plot_time(var_time_plot)
 
@@ -150,7 +156,7 @@ if histg_color:
     taken_option = y_poss_options_2
 
     if taken_option in y_color_poss_options_2:
-        y_color_poss_options_2 = tuple([poss_option for poss_option in y_color_poss_options_2 if option != taken_option])
+        y_color_poss_options_2 = tuple([poss_option for poss_option in y_color_poss_options_2 if poss_option != taken_option])
         
     color_op = st.selectbox(
                 "Select var for color",
@@ -160,3 +166,30 @@ if histg_color:
     var_time_plot_2 = plotting(df, histx_option_2, histy_option_2, stat_2, color_op)
     
     get_plot_time(var_time_plot_2)
+    
+scatter = st.checkbox("scatter plot") 
+poss_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Emoji_list" ,"Word_count")
+color_size_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Emoji_list" ,"Word_count","None")
+
+x_var = st.selectbox(
+            "Select x time var",
+            poss_options
+    )
+        
+y_var = st.selectbox(
+            "Select x time var",
+            poss_options
+    )
+
+color_var = st.selectbox(
+            "Select x time var",
+            poss_options
+    )
+        
+size_var = st.selectbox(
+            "Select x time var",
+            poss_options
+    )
+
+scatter_plot = plotting(df, x_var, x_var, 'None', color_var)
+scatter_plot.scatter_plot(size_var)
