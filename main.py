@@ -15,8 +15,8 @@ class plotting():
         self.group_by = group_by
         self.stat = stat
         self.y_var = y_var
-        self.prepare_data()
         self.color_var = color_var 
+        self.prepare_data()
     def show_plot(self):
         self.get_fig()
         st.plotly_chart(self.fig)
