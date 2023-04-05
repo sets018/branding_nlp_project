@@ -16,7 +16,7 @@ class plotting():
         self.stat = stat
         self.y_var = y_var
     def show_plot(self):
-        get_fig()
+        self.get_fig()
         st.plotly_chart(self.fig)
     def prepare_data(self):
         if (stat == "Count"):
@@ -50,7 +50,7 @@ client = bigquery.Client(credentials=credentials)
 
 # Perform query.
 # Uses st.cache_data to only rerun when the query changes or after 10 min.
-@st.cache()
+@st.cache_data()
 def run_query(query):
     query_job = client.query(query)
     rows_raw = query_job.result()
