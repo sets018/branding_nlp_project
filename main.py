@@ -78,6 +78,6 @@ st.write("Data columns/vars")
 st.write(df.columns)
 st.write("Numerical variables stats")
 df_stats  = df.describe().apply(lambda s: s.apply(lambda x: format(x, 'f')))
-df_num_stats = df_stats[["Retweet Count",	"Quote Count",	"Like Count", "Word_count", "Emoji_count"]]
+df_num_stats = df_stats[["Retweet_Count", "Quote_Count", "Like_Count", "Word_count", "Emoji_count"]]
 st.dataframe(df_num_stats)
 st.write("Graphsssssssss")
