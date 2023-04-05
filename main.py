@@ -130,11 +130,11 @@ histg_color = st.checkbox("Distribution histogram with x axis as a cualitative v
 
 if histg_color:
     histx_option_2 = st.selectbox(
-            "Select x time var",
+            "Select x time var for color histogram",
             ("Day", "Month", "Day_Month")
     )
     stat_2 =  st.radio(
-        "Select stat for y axis var",
+        "Select stat for y axis var color histogram",
         options=["Count","Mean","Sum"]
     )
     if (stat_2 == "Count"): 
@@ -143,7 +143,7 @@ if histg_color:
     else: 
         y_poss_options_2 = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")  
         histy_option_2 = st.selectbox(
-                "Select y var",
+                "Select y var for color histogram",
                 y_poss_options_2
             )  
     color_stat =  st.radio(
@@ -157,7 +157,7 @@ if histg_color:
     else: 
         y_poss_color_options_2 = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")  
         color_option =  st.selectbox(
-                "Select y var",
+                "Select color var",
                 y_poss_color_options_2
             )  
     
