@@ -28,6 +28,7 @@ class plotting():
                 self.data_plot = self.data.groupby(self.group_by).sum()[self.y_var]
             if (self.stat == "Mean"):
                 self.data_plot = self.data.groupby(self.group_by).mean()[self.y_var]
+            self.data_plot = self.data_plot.to_frame()
         else: 
             if (self.stat == "Count"):
                 self.data_plot = self.data.groupby(self.group_by).count()[[self.y_var,self.color_var]]
@@ -35,7 +36,6 @@ class plotting():
                 self.data_plot = self.data.groupby(self.group_by).sum()[[self.y_var,self.color_var]]
             if (self.stat == "Mean"):
                 self.data_plot = self.data.groupby(self.group_by).mean()[[self.y_var,self.color_var]]
-        self.data_plot = self.data_plot.to_frame()
         self.data_plot = self.data_plot.reset_index()
         st.write(self.data_plot)
     def get_fig(self):
