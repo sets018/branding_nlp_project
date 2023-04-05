@@ -31,7 +31,7 @@ class plotting():
         st.write(self.data_plot)
     def get_fig(self):
         if (self.stat == "Count"):
-            self.fig = px.bar(self.data_plot, x = self.group_by, y = self.y_var, title=f"# Tweets distribution over {self.group_by}s"
+            self.fig = px.bar(self.data_plot, x = self.group_by, y = self.y_var, title=f"# Tweets distribution over {self.group_by}s")
         else:
             self.fig = px.bar(self.data_plot, x = self.group_by, y = self.y_var, title=f"{self.y_var} {self.stat} distribution over {self.group_by}s")
         
