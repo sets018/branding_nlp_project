@@ -150,11 +150,11 @@ if histg_color:
     taken_option = y_poss_options_2
 
     if taken_option in y_color_poss_options_2:
-        y_color_poss_options = tuple([poss_option for poss_option in y_color_poss_options_2 if option != taken_option])
+        y_color_poss_options_2 = tuple([poss_option for poss_option in y_color_poss_options_2 if option != taken_option])
         
     color_op = st.selectbox(
                 "Select var for color",
-                y_color_poss_options
+                y_color_poss_options_2
             )  
     
     var_time_plot_2 = plotting(df, histx_option_2, histy_option_2, stat_2, color_op)
