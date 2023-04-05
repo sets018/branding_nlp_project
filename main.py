@@ -82,7 +82,6 @@ st.write("Graphsssssssss")
 histg = st.checkbox("Distribution histogram with x axis as a cualitative var")
 
 if histg:
-    st.write("Distribution histogram with x axis as a cualitative var")
     histx_option = st.selectbox(
             "Select x time var",
             ("Day", "Month", "Year", "Day_Month", "Month_Year")
@@ -101,8 +100,7 @@ if histg:
             y_poss_options
         )
     var_time_plot = plotting(df, histx_option, histy_option, stat)
-    
-    @st.cache_data
+
     def get_plot_time(var_time_plot): 
         var_time_plot.show_plot()
      
