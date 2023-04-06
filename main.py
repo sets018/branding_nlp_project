@@ -151,44 +151,42 @@ if histg_color:
                 "Select y var for color histogram",
                 y_poss_options_2
             )  
-    y_color_poss_options_2 = y_poss_options_2 
-    taken_option = y_poss_options_2
-
-    if taken_option in y_color_poss_options_2:
-        y_color_poss_options_2 = tuple([poss_option for poss_option in y_color_poss_options_2 if poss_option != taken_option])
         
     color_op = st.selectbox(
                 "Select var for color",
                 y_color_poss_options_2
             )  
-    
-    var_time_plot_2 = plotting(df, histx_option_2, histy_option_2, stat_2, color_op)
-    
-    get_plot_time(var_time_plot_2)
+    if (histy_option_2 == color_op): 
+        st.write("same var")
+    else:
+        var_time_plot_2 = plotting(df, histx_option_2, histy_option_2, stat_2, color_op)
+
+        get_plot_time(var_time_plot_2)
     
 scatter = st.checkbox("scatter plot") 
-poss_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Emoji_list" ,"Word_count")
-color_size_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Emoji_list" ,"Word_count","None")
+if scatter:
+    poss_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Emoji_list" ,"Word_count")
+    color_size_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Emoji_list" ,"Word_count","None")
 
-x_var = st.selectbox(
-            "Select x time var",
-            poss_options
-    )
-        
-y_var = st.selectbox(
-            "Select x time var",
-            poss_options
-    )
+    x_var = st.selectbox(
+                "Select x var",
+                poss_options
+        )
 
-color_var = st.selectbox(
-            "Select x time var",
-            poss_options
-    )
-        
-size_var = st.selectbox(
-            "Select x time var",
-            poss_options
-    )
+    y_var = st.selectbox(
+                "Select y var",
+                poss_options
+        )
 
-scatter_plot = plotting(df, x_var, x_var, 'None', color_var)
-scatter_plot.scatter_plot(size_var)
+    color_var = st.selectbox(
+                "Select color var",
+                poss_options
+        )
+
+    size_var = st.selectbox(
+                "Select size var",
+                poss_options
+        )
+
+    scatter_plot = plotting(df, x_var, x_var, 'None', color_var)
+    scatter_plot.scatter_plot(size_var)
