@@ -10,19 +10,22 @@ from google.cloud import bigquery
 import plotly.express as px
 
 class plotting():
-    def __init__(self, data, group_by, y_var, stat, color_var):
+    def __init__(self, data, group_by, y_var, stat, color_var, plot_type):
         self.data = data
         self.group_by = group_by
         self.stat = stat
         self.y_var = y_var
-        self.color_var = color_var 
-        self.prepare_data()
+        self.color_var = color_var
+        if (plot_type == "Hist"):
+            self.prepare_data()
+        else: 
+            self.data_plot = data
     def show_plot(self):
         self.get_fig()
         st.plotly_chart(self.fig)
     def scatter_plot(self, size_var):
         self.size_var = size_var
-        self.scatter_fig = px.scatter(df, x = self.group_by, y = self.y_var, color = self.color_var, size = self.size_var)
+        self.scatter_fig = px.scatter(self.data_plot, x = self.group_by, y = self.y_var, color = self.color_var, size = self.size_var)
         st.plotly_chart(self.scatter_fig)
     def prepare_data(self):
         if (self.color_var == 'None'): 
@@ -127,7 +130,7 @@ if histg:
                 y_poss_options
             )
     
-    var_time_plot = plotting(df, histx_option, histy_option, stat, 'None')
+    var_time_plot = plotting(df, histx_option, histy_option, stat, "None", "Hist")
      
     get_plot_time(var_time_plot)
 
@@ -159,7 +162,7 @@ if histg_color:
     if (histy_option_2 == color_op): 
         st.write("same var")
     else:
-        var_time_plot_2 = plotting(df, histx_option_2, histy_option_2, stat_2, color_op)
+        var_time_plot_2 = plotting(df, histx_option_2, histy_option_2, stat_2, color_op, "Hist")
 
         get_plot_time(var_time_plot_2)
     
@@ -188,5 +191,5 @@ if scatter:
                 poss_options
         )
 
-    scatter_plot = plotting(df, x_var, x_var, 'None', color_var)
+    scatter_plot = plotting(df, x_var, x_var, 'None', color_var, "Scatter")
     scatter_plot.scatter_plot(size_var)
