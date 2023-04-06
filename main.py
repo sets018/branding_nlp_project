@@ -85,7 +85,7 @@ def run_query(query):
     df = pd.DataFrame(rows)
     return df
 
-df = run_query("SELECT * FROM `branding-nlp-project.twitter_data.twitter_data_clean`")
+df = run_query("SELECT * FROM `branding-nlp-project.twitter_data.twitter_data_merged_clean`")
 
 st.write("Data head")
 st.write(df.head())
@@ -113,7 +113,7 @@ histg = st.checkbox("Distribution histogram with x axis as a cualitative var")
 if histg:
     histx_option = st.selectbox(
             "Select x time var",
-            ("Hour", "Day", "Month", "Day_Month")
+            ("Hour", "Day", "Month", "Day_Month", "Day_of_the_week")
     )
     stat =  st.radio(
         "Select stat for y axis var",
@@ -138,7 +138,7 @@ histg_color = st.checkbox("Distribution histogram with x axis as a cualitative v
 if histg_color:
     histx_option_2 = st.selectbox(
             "Select x time var for color histogram",
-            ("Hour", "Day", "Month", "Day_Month")
+            ("Hour", "Day", "Month", "Day_Month", "Day_of_the_week")
     )
     stat_2 =  st.radio(
         "Select stat for y axis var color histogram",
@@ -169,7 +169,7 @@ if histg_color:
     
 scatter = st.checkbox("scatter plot") 
 if scatter:
-    poss_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count"
+    poss_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")
 
     x_var = st.selectbox(
                 "Select x var",
