@@ -23,9 +23,8 @@ class plotting():
     def show_plot(self):
         self.get_fig()
         st.plotly_chart(self.fig)
-    def scatter_plot(self, size_var):
-        self.size_var = size_var
-        self.scatter_fig = px.scatter(self.data_plot, x = self.group_by, y = self.y_var, color = self.color_var, size = self.size_var)
+    def scatter_plot(self):
+        self.scatter_fig = px.scatter(self.data_plot, x = self.group_by, y = self.y_var, color = self.color_var)
         st.plotly_chart(self.scatter_fig)
     def prepare_data(self):
         if (self.color_var == 'None'): 
@@ -170,8 +169,7 @@ if histg_color:
     
 scatter = st.checkbox("scatter plot") 
 if scatter:
-    poss_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Emoji_list" ,"Word_count")
-    color_size_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Emoji_list" ,"Word_count","None")
+    poss_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count"
 
     x_var = st.selectbox(
                 "Select x var",
@@ -185,14 +183,9 @@ if scatter:
 
     color_var = st.selectbox(
                 "Select color var",
-                color_size_options
-        )
-
-    size_var = st.selectbox(
-                "Select size var",
-                color_size_options
+                poss_options
         )
     
     if st.button('Create scatter'):
         scatter_plot = plotting(df, x_var, y_var, 'None', color_var, "Scatter")
-        scatter_plot.scatter_plot(size_var)
+        scatter_plot.scatter_plot()
