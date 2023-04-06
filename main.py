@@ -129,10 +129,10 @@ if histg:
                 "Select y var",
                 y_poss_options
             )
-    
-    var_time_plot = plotting(df, histx_option, histy_option, stat, "None", "Hist")
-     
-    get_plot_time(var_time_plot)
+    if st.button('Create histogram'):
+        var_time_plot = plotting(df, histx_option, histy_option, stat, "None", "Hist")
+
+        get_plot_time(var_time_plot)
 
 histg_color = st.checkbox("Distribution histogram with x axis as a cualitative var with co=lo=ur")
 
@@ -162,9 +162,11 @@ if histg_color:
     if (histy_option_2 == color_op): 
         st.write("same var")
     else:
-        var_time_plot_2 = plotting(df, histx_option_2, histy_option_2, stat_2, color_op, "Hist")
+        if st.button('Create color histogram'):
+            var_time_plot_2 = plotting(df, histx_option_2, histy_option_2, stat_2, color_op, "Hist")
 
-        get_plot_time(var_time_plot_2)
+            get_plot_time(var_time_plot_2)
+        
     
 scatter = st.checkbox("scatter plot") 
 if scatter:
@@ -190,6 +192,7 @@ if scatter:
                 "Select size var",
                 color_size_options
         )
-
-    scatter_plot = plotting(df, x_var, y_var, 'None', color_var, "Scatter")
-    scatter_plot.scatter_plot(size_var)
+    
+    if st.button('Create scatter'):
+        scatter_plot = plotting(df, x_var, y_var, 'None', color_var, "Scatter")
+        scatter_plot.scatter_plot(size_var)
