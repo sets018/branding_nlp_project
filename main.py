@@ -22,8 +22,7 @@ class plotting():
         st.plotly_chart(self.fig)
     def scatter_plot(self, size_var):
         self.size_var = size_var
-        self.scatter_fig = px.scatter(df, x = self.group_by, y = self.y_var, self.color_var,
-                           size = self.size_var)
+        self.scatter_fig = px.scatter(df, x = self.group_by, y = self.y_var, color = self.color_var, size = self.size_var)
         st.plotly_chart(self.scatter_fig)
     def prepare_data(self):
         if (self.color_var == 'None'): 
