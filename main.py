@@ -183,13 +183,13 @@ if scatter:
 
     color_var = st.selectbox(
                 "Select color var",
-                poss_options
+                color_size_options
         )
 
     size_var = st.selectbox(
                 "Select size var",
-                poss_options
+                color_size_options
         )
 
-    scatter_plot = plotting(df, x_var, x_var, 'None', color_var, "Scatter")
+    scatter_plot = plotting(df, x_var, y_var, 'None', color_var, "Scatter")
     scatter_plot.scatter_plot(size_var)
