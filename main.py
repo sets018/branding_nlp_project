@@ -63,8 +63,8 @@ st.set_page_config(
     initial_sidebar_state="auto",
 )
 
-st.title('Twitter_EDA')
-st.write('idk what im doing with my life')
+st.title('Twitter scrap data analysis')
+st.write('Descriptive statistical analysis from the data scraped from twitter')
 
 cat_input = []
 num_input = []
@@ -87,13 +87,14 @@ def run_query(query):
 
 df = run_query("SELECT * FROM `branding-nlp-project.twitter_data.twitter_data_merged_clean`")
 
-st.write("Data head")
+st.write("Data head first five rows")
 st.write(df.head())
-st.write("Data shape")
+st.write("Data shape (rows, variables)")
+st.write("Rows (tweets), columns (variables)")
 st.write(df.shape)
-st.write("Data columns/vars")
+st.write("Data columns/variables")
 st.write(df.columns)
-st.write("Numerical variables stats")
+st.write("Descriptive statistics for numerical variables")
 
 @st.cache_data()
 def get_stats(data):
