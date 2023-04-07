@@ -154,12 +154,12 @@ if histg_color:
         y_poss_options_2 = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")  
         histy_option_2 = st.selectbox(
                 "Select numerical variable for y axis in color histogram",
-                 y_poss_options_2 = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")  
+                 y_poss_options_2
             )  
         
     color_op = st.selectbox(
                 "Select numerical variable for color in color histogram",
-                 y_poss_options_2 = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")  
+                 y_poss_options_2
             )  
     if (histy_option_2 == color_op): 
         st.write("Same variable")
