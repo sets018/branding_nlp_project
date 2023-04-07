@@ -169,7 +169,7 @@ if histg_color:
 
             get_plot_time(var_time_plot_2)
         
-    
+st.write("Click to create graph")     
 scatter = st.checkbox("Scatter plot of numerical variables") 
 if scatter:
     poss_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")
