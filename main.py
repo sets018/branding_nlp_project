@@ -151,7 +151,7 @@ if histg_color:
         y_poss_options_2 = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")  
         histy_option_2 = st.selectbox(
                 "Select y var for color histogram",
-                y_poss_options_2
+                 y_poss_options_2 = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")  
             )  
         
     color_op = st.selectbox(
