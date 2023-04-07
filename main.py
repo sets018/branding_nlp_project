@@ -104,20 +104,21 @@ def get_stats(data):
 df_stats  = get_stats(df)
 df_num_stats = df_stats[["Retweet_Count", "Quote_Count", "Like_Count", "Word_count", "Emoji_count"]]
 st.dataframe(df_num_stats)
-st.write("Graphsssssssss")
+st.write("Scraped data graphics")
 
 def get_plot_time(var_time_plot): 
     var_time_plot.show_plot()
     
-histg = st.checkbox("Distribution histogram with x axis as a cualitative var")
+st.write("Click to create graph")    
+histg = st.checkbox("Distribution histogram with x axis as a cualitative variable and y axis as a statistic numerical variable")
 
 if histg:
     histx_option = st.selectbox(
-            "Select x time var",
+            "Select x variable",
             ("Hour", "Day", "Month", "Day_Month", "Day_of_the_week")
     )
     stat =  st.radio(
-        "Select stat for y axis var",
+        "Select statistic for y axis numerical variable",
         options=["Count","Mean","Sum"]
     )
     if (stat == "Count"): 
@@ -133,16 +134,17 @@ if histg:
         var_time_plot = plotting(df, histx_option, histy_option, stat, "None", "Hist")
 
         get_plot_time(var_time_plot)
-
-histg_color = st.checkbox("Distribution histogram with x axis as a cualitative var with co=lo=ur")
+        
+st.write("Click to create graph")  
+histg_color = st.checkbox("Distribution histogram with x axis as a cualitative variable and y axis as a continous variable and a third continous variable as color")
 
 if histg_color:
     histx_option_2 = st.selectbox(
-            "Select x time var for color histogram",
+            "Select x variable for color histogram",
             ("Hour", "Day", "Month", "Day_Month", "Day_of_the_week")
     )
     stat_2 =  st.radio(
-        "Select stat for y axis var color histogram",
+        "Select statistic for y axis in numerical variable for color histogram",
         options=["Count","Mean","Sum"]
     )
     if (stat_2 == "Count"): 
@@ -151,16 +153,16 @@ if histg_color:
     else: 
         y_poss_options_2 = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")  
         histy_option_2 = st.selectbox(
-                "Select y var for color histogram",
+                "Select numerical variable for y axis in color histogram",
                  y_poss_options_2 = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")  
             )  
         
     color_op = st.selectbox(
-                "Select var for color",
+                "Select numerical variable for color in color histogram",
                  y_poss_options_2 = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")  
             )  
     if (histy_option_2 == color_op): 
-        st.write("same var")
+        st.write("Same variable")
     else:
         if st.button('Create color histogram'):
             var_time_plot_2 = plotting(df, histx_option_2, histy_option_2, stat_2, color_op, "Hist")
@@ -168,22 +170,22 @@ if histg_color:
             get_plot_time(var_time_plot_2)
         
     
-scatter = st.checkbox("scatter plot") 
+scatter = st.checkbox("Scatter plot of numerical variables") 
 if scatter:
     poss_options = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")
 
     x_var = st.selectbox(
-                "Select x var",
+                "Select x variable for scatterplot",
                 poss_options
         )
 
     y_var = st.selectbox(
-                "Select y var",
+                "Select y variable for scatterplot",
                 poss_options
         )
 
     color_var = st.selectbox(
-                "Select color var",
+                "Select color variable for scatterplot",
                 poss_options
         )
     
