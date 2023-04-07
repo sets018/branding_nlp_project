@@ -156,7 +156,7 @@ if histg_color:
         
     color_op = st.selectbox(
                 "Select var for color",
-                y_color_poss_options_2
+                 y_poss_options_2 = ("Retweet_Count", "Quote_Count", "Like_Count", "Emoji_count", "Word_count")  
             )  
     if (histy_option_2 == color_op): 
         st.write("same var")
